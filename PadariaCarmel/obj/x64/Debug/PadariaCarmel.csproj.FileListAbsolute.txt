@@ -1,0 +1,11 @@
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\bin\x64\Debug\PadariaCarmel.exe.config
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\bin\x64\Debug\PadariaCarmel.exe
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\bin\x64\Debug\PadariaCarmel.pdb
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.frmComponents.resources
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.frmLogin.resources
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.Properties.Resources.resources
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.csproj.GenerateResource.cache
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.csproj.CoreCompileInputs.cache
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.exe
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.pdb
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.csproj.AssemblyReference.cache
