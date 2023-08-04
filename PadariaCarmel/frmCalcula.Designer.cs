@@ -145,7 +145,6 @@ namespace PadariaCarmel
             this.btnCalcular.Text = "&Calcular";
             this.btnCalcular.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnLimpar
             // 
@@ -157,7 +156,6 @@ namespace PadariaCarmel
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSair
             // 
@@ -169,7 +167,6 @@ namespace PadariaCarmel
             this.btnSair.Text = "Sai&r";
             this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // lblResultado
             // 

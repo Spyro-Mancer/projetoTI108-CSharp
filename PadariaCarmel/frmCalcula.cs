@@ -37,7 +37,7 @@ namespace PadariaCarmel
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             //declaração das vareáveis
-            double num1, num2, resp=0;
+            double num1, num2, resp = 0;
 
             try
             {
@@ -96,12 +96,20 @@ namespace PadariaCarmel
             }
             catch (Exception)
             {
-                MessageBox.Show("Insira apenas números!");
-                txtNum1.Text = "";
-                txtNum2.Text = "";
-                lblResposta.Text = "";
-                txtNum1.Focus();
+                MessageBox.Show("Insira apenas números!",
+                                        "Mensagem do Sistema",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning,
+                                        MessageBoxDefaultButton.Button1);
             }
+
+
+
+            txtNum1.Text = "";
+            txtNum2.Text = "";
+            lblResposta.Text = "";
+            txtNum1.Focus();
         }
     }
 }
+

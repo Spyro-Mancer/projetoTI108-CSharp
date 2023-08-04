@@ -10,3 +10,4 @@ C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\Pa
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.csproj.CoreCompileInputs.cache
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.exe
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.pdb
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\x64\Debug\PadariaCarmel.frmSplash.resources
