@@ -208,6 +208,7 @@ namespace PadariaCarmel
             this.Name = "frmCalcula";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Padaria - Calculadora";
+            this.Load += new System.EventHandler(this.frmCalcula_Load);
             this.gpbOperacoes.ResumeLayout(false);
             this.gpbOperacoes.PerformLayout();
             this.ResumeLayout(false);

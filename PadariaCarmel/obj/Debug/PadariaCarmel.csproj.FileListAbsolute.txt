@@ -11,3 +11,6 @@ C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\Pa
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\Debug\PadariaCarmel.frmLogin.resources
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\Debug\PadariaCarmel.frmCalcula.resources
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\Debug\PadariaCarmel.frmSplash.resources
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\Debug\PadariaCarmel.frmMenuPrincipal.resources
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\Debug\PadariaCarmel.frmSobre.resources
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\ProjetoTI108\EmpresaABC\PadariaCarmel\obj\Debug\PadariaCarmel.frmFuncionarios.resources
