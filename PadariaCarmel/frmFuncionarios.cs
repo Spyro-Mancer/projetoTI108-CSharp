@@ -133,5 +133,46 @@ namespace PadariaCarmel
         {
             limparCampos();
         }
+
+        public void buscaCEP(string numCEP)
+        {
+            WSCorreios.AtendeClienteClient ws = new WSCorreios.AtendeClienteClient();
+            try
+            {
+                WSCorreios.enderecoERP endereco = ws.consultaCEP(numCEP);
+
+                txtEndereco.Text = endereco.end;
+                txtBairro.Text = endereco.bairro;
+                txtCidade.Text = endereco.cidade;
+                cbbEstado.Text = endereco.uf;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Por gentileza, insira CEP válido!",
+                    "Mensagem do Sistema",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+                mskCEP.Focus();
+                mskCEP.Text = "";
+
+            }
+            
+        }
+
+        private void mskCEP_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buscaCEP(mskCEP.Text);
+                txtNumero.Focus();
+            }
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            frmPesquisa abrir = new frmPesquisa();
+            abrir.ShowDialog();
+        }
     }
 }
