@@ -19,3 +19,19 @@ estado char(2),
 cep char(9),
 primary key(codFunc)
 );
+-- insert into tbFuncionarios(nome,email,telCel,cpf,endereco,numero,bairro,cidade,cep);
+-- values('Willian Brito','willianhenriquevb@gmail.com','(11) 95824-7859','403.180.848-80','Av. João Caiaffa','40','Vila Sônia','São Paulo','SP','05742-100');
+
+desc tbFuncionarios;
+select * from tbFuncionarios;
+
+-- pesquisa por código
+select nome from tbFuncionarios where codFunc = 1;
+
+-- pesquisa por nome
+select nome from tbFuncionarios where nome like '%a%';
+
+select * from tbFuncionarios where like '%" + nome + "%'
+
+-- alterar funcionario
+-- update tbFuncionarios set nome = @nome,email = @email,telCel = @telCel,cpf = @cpf,endereco = @endereco,numero = @numero,bairro = @bairro,cidade = @cidade,cep = @cep where codFunc = @codFunc;
