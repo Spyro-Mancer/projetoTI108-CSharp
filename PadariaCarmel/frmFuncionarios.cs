@@ -221,6 +221,22 @@ namespace PadariaCarmel
             Conectar.fecharConexao();
         }
 
+        //excluir funcionários
+        public void excluirFuncionarios(int codigo)
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "delete from tbFuncionarios where codFunc = @codFunc;";
+
+            comm.CommandType = CommandType.Text;
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@codFunc", MySqlDbType.Int32, 11).Value = codigo;
+
+            comm.Connection = Conectar.obterConexao();
+            int res = comm.ExecuteNonQuery();
+            Conectar.fecharConexao();
+        }
+
         //pesquisar por código
         public void pesquisarCodigo()
         {
@@ -301,7 +317,6 @@ namespace PadariaCarmel
                 mskCEP.Text = "";
 
             }
-
         }
 
         private void mskCEP_KeyDown(object sender, KeyEventArgs e)
@@ -330,7 +345,7 @@ namespace PadariaCarmel
             alterarFuncionarios(Convert.ToInt32(txtCodigo.Text));
 
             MessageBox.Show("Alterado com sucesso!",
-                "mensagem do sistema.",
+                "Mensagem do sistema.",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information,
                 MessageBoxDefaultButton.Button1);
@@ -338,6 +353,34 @@ namespace PadariaCarmel
             desabilitarCampos();
             btnNovo.Enabled = true;
             limparCampos();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+            DialogResult resp = MessageBox.Show("Deseja excluir Funcionário?",
+                "Mensagem do sistema.",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button2);
+
+            if (resp == DialogResult.Yes)
+            {
+                excluirFuncionarios(Convert.ToInt32(txtCodigo.Text));
+                MessageBox.Show("Excluído com Sucesso!",
+                "Mensagem do sistema.",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information,
+                MessageBoxDefaultButton.Button1);
+                limparCampos();
+                desabilitarCampos();
+            }
+            else
+            {
+                txtNome.Focus();
+            }
+
+
         }
     }
 }

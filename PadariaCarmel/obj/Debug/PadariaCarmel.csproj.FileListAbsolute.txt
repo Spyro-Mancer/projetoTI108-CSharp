@@ -55,3 +55,4 @@ C:\Users\willian.hvbrito\Documents\Visual Studio 2019\projetoTI108-CSharp\Padari
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\projetoTI108-CSharp\PadariaCarmel\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\projetoTI108-CSharp\PadariaCarmel\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\willian.hvbrito\Documents\Visual Studio 2019\projetoTI108-CSharp\PadariaCarmel\obj\Debug\PadariaCarmel.csproj.CopyComplete
+C:\Users\willian.hvbrito\Documents\Visual Studio 2019\projetoTI108-CSharp\PadariaCarmel\obj\Debug\PadariaCarmel.frmCadastrarUsuario.resources
