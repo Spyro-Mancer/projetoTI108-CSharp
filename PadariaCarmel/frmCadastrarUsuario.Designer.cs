@@ -30,24 +30,8 @@ namespace PadariaCarmel
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastrarUsuario));
-            this.mskCEP = new System.Windows.Forms.MaskedTextBox();
-            this.lblCEP = new System.Windows.Forms.Label();
-            this.cbbEstado = new System.Windows.Forms.ComboBox();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.lblCidade = new System.Windows.Forms.Label();
-            this.txtBairro = new System.Windows.Forms.TextBox();
-            this.lblBairro = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.lblEndereco = new System.Windows.Forms.Label();
-            this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.mskCPF = new System.Windows.Forms.MaskedTextBox();
-            this.lblCPF = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -61,175 +45,45 @@ namespace PadariaCarmel
             this.pnlCrud = new System.Windows.Forms.Panel();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.pnlFuncionarios = new System.Windows.Forms.Panel();
+            this.txtContraSenha = new System.Windows.Forms.TextBox();
+            this.lblContraSenha = new System.Windows.Forms.Label();
+            this.lstFuncNCad = new System.Windows.Forms.ListBox();
+            this.lblFuncNCad = new System.Windows.Forms.Label();
             this.pnlCrud.SuspendLayout();
             this.pnlFuncionarios.SuspendLayout();
             this.SuspendLayout();
             // 
-            // mskCEP
+            // txtSenha
             // 
-            this.mskCEP.Location = new System.Drawing.Point(34, 252);
-            this.mskCEP.Mask = "99999-999";
-            this.mskCEP.Name = "mskCEP";
-            this.mskCEP.Size = new System.Drawing.Size(96, 26);
-            this.mskCEP.TabIndex = 6;
+            this.txtSenha.Font = new System.Drawing.Font("Wingdings", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.txtSenha.Location = new System.Drawing.Point(30, 180);
+            this.txtSenha.MaxLength = 100;
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = 'l';
+            this.txtSenha.Size = new System.Drawing.Size(327, 25);
+            this.txtSenha.TabIndex = 3;
             // 
-            // lblCEP
+            // lblSenha
             // 
-            this.lblCEP.AutoSize = true;
-            this.lblCEP.Location = new System.Drawing.Point(30, 229);
-            this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(41, 20);
-            this.lblCEP.TabIndex = 20;
-            this.lblCEP.Text = "CEP";
-            // 
-            // cbbEstado
-            // 
-            this.cbbEstado.FormattingEnabled = true;
-            this.cbbEstado.Location = new System.Drawing.Point(548, 394);
-            this.cbbEstado.Name = "cbbEstado";
-            this.cbbEstado.Size = new System.Drawing.Size(94, 28);
-            this.cbbEstado.TabIndex = 11;
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(548, 371);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(60, 20);
-            this.lblEstado.TabIndex = 18;
-            this.lblEstado.Text = "Estado";
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(330, 394);
-            this.txtCidade.MaxLength = 150;
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(195, 26);
-            this.txtCidade.TabIndex = 10;
-            // 
-            // lblCidade
-            // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(326, 371);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(59, 20);
-            this.lblCidade.TabIndex = 16;
-            this.lblCidade.Text = "Cidade";
-            // 
-            // txtBairro
-            // 
-            this.txtBairro.Location = new System.Drawing.Point(34, 394);
-            this.txtBairro.MaxLength = 150;
-            this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(272, 26);
-            this.txtBairro.TabIndex = 9;
-            // 
-            // lblBairro
-            // 
-            this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(30, 371);
-            this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(51, 20);
-            this.lblBairro.TabIndex = 14;
-            this.lblBairro.Text = "Bairro";
-            // 
-            // txtNumero
-            // 
-            this.txtNumero.Location = new System.Drawing.Point(624, 325);
-            this.txtNumero.MaxLength = 10;
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(132, 26);
-            this.txtNumero.TabIndex = 8;
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(620, 302);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(65, 20);
-            this.lblNumero.TabIndex = 12;
-            this.lblNumero.Text = "Número";
-            // 
-            // txtEndereco
-            // 
-            this.txtEndereco.Location = new System.Drawing.Point(34, 325);
-            this.txtEndereco.MaxLength = 150;
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(566, 26);
-            this.txtEndereco.TabIndex = 7;
-            // 
-            // lblEndereco
-            // 
-            this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Location = new System.Drawing.Point(30, 302);
-            this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(78, 20);
-            this.lblEndereco.TabIndex = 10;
-            this.lblEndereco.Text = "Endereço";
-            // 
-            // mskTelefone
-            // 
-            this.mskTelefone.Location = new System.Drawing.Point(620, 110);
-            this.mskTelefone.Mask = "(99) 99999-9999";
-            this.mskTelefone.Name = "mskTelefone";
-            this.mskTelefone.Size = new System.Drawing.Size(131, 26);
-            this.mskTelefone.TabIndex = 4;
-            // 
-            // lblTelefone
-            // 
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(616, 87);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(71, 20);
-            this.lblTelefone.TabIndex = 8;
-            this.lblTelefone.Text = "Telefone";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(30, 180);
-            this.txtEmail.MaxLength = 100;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(410, 26);
-            this.txtEmail.TabIndex = 5;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(26, 157);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(53, 20);
-            this.lblEmail.TabIndex = 6;
-            this.lblEmail.Text = "E-mail";
-            // 
-            // mskCPF
-            // 
-            this.mskCPF.Location = new System.Drawing.Point(464, 110);
-            this.mskCPF.Mask = "999,999,999-99";
-            this.mskCPF.Name = "mskCPF";
-            this.mskCPF.Size = new System.Drawing.Size(132, 26);
-            this.mskCPF.TabIndex = 3;
-            // 
-            // lblCPF
-            // 
-            this.lblCPF.AutoSize = true;
-            this.lblCPF.Location = new System.Drawing.Point(460, 87);
-            this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(40, 20);
-            this.lblCPF.TabIndex = 4;
-            this.lblCPF.Text = "CPF";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Location = new System.Drawing.Point(26, 158);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(56, 20);
+            this.lblSenha.TabIndex = 6;
+            this.lblSenha.Text = "Senha";
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(30, 110);
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(410, 26);
+            this.txtNome.Size = new System.Drawing.Size(327, 26);
             this.txtNome.TabIndex = 2;
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(26, 87);
+            this.lblNome.Location = new System.Drawing.Point(26, 86);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(51, 20);
             this.lblNome.TabIndex = 2;
@@ -237,7 +91,7 @@ namespace PadariaCarmel
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(30, 43);
+            this.txtCodigo.Location = new System.Drawing.Point(30, 44);
             this.txtCodigo.MaxLength = 10;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 26);
@@ -258,12 +112,13 @@ namespace PadariaCarmel
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(663, 12);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(97, 46);
-            this.btnVoltar.TabIndex = 19;
+            this.btnVoltar.Size = new System.Drawing.Size(98, 46);
+            this.btnVoltar.TabIndex = 12;
             this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnNovo
             // 
@@ -271,12 +126,13 @@ namespace PadariaCarmel
             this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
             this.btnNovo.Location = new System.Drawing.Point(19, 12);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(97, 46);
-            this.btnNovo.TabIndex = 13;
+            this.btnNovo.Size = new System.Drawing.Size(98, 46);
+            this.btnNovo.TabIndex = 6;
             this.btnNovo.Text = "&Novo";
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnLimpar
             // 
@@ -284,8 +140,8 @@ namespace PadariaCarmel
             this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
             this.btnLimpar.Location = new System.Drawing.Point(555, 12);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(97, 46);
-            this.btnLimpar.TabIndex = 18;
+            this.btnLimpar.Size = new System.Drawing.Size(98, 46);
+            this.btnLimpar.TabIndex = 11;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -297,12 +153,13 @@ namespace PadariaCarmel
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
             this.btnCadastrar.Location = new System.Drawing.Point(127, 12);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(97, 46);
-            this.btnCadastrar.TabIndex = 14;
+            this.btnCadastrar.Size = new System.Drawing.Size(98, 46);
+            this.btnCadastrar.TabIndex = 7;
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnPesquisar
             // 
@@ -310,8 +167,8 @@ namespace PadariaCarmel
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
             this.btnPesquisar.Location = new System.Drawing.Point(448, 12);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(97, 46);
-            this.btnPesquisar.TabIndex = 17;
+            this.btnPesquisar.Size = new System.Drawing.Size(98, 46);
+            this.btnPesquisar.TabIndex = 10;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -323,8 +180,8 @@ namespace PadariaCarmel
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
             this.btnAlterar.Location = new System.Drawing.Point(234, 12);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(97, 46);
-            this.btnAlterar.TabIndex = 15;
+            this.btnAlterar.Size = new System.Drawing.Size(98, 46);
+            this.btnAlterar.TabIndex = 8;
             this.btnAlterar.Text = "&Alterar";
             this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAlterar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -344,7 +201,7 @@ namespace PadariaCarmel
             this.pnlCrud.Location = new System.Drawing.Point(2, 487);
             this.pnlCrud.Name = "pnlCrud";
             this.pnlCrud.Size = new System.Drawing.Size(780, 71);
-            this.pnlCrud.TabIndex = 14;
+            this.pnlCrud.TabIndex = 5;
             // 
             // btnExcluir
             // 
@@ -352,8 +209,8 @@ namespace PadariaCarmel
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.Location = new System.Drawing.Point(341, 12);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(97, 46);
-            this.btnExcluir.TabIndex = 16;
+            this.btnExcluir.Size = new System.Drawing.Size(98, 46);
+            this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "&Excluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -362,24 +219,12 @@ namespace PadariaCarmel
             // pnlFuncionarios
             // 
             this.pnlFuncionarios.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pnlFuncionarios.Controls.Add(this.mskCEP);
-            this.pnlFuncionarios.Controls.Add(this.lblCEP);
-            this.pnlFuncionarios.Controls.Add(this.cbbEstado);
-            this.pnlFuncionarios.Controls.Add(this.lblEstado);
-            this.pnlFuncionarios.Controls.Add(this.txtCidade);
-            this.pnlFuncionarios.Controls.Add(this.lblCidade);
-            this.pnlFuncionarios.Controls.Add(this.txtBairro);
-            this.pnlFuncionarios.Controls.Add(this.lblBairro);
-            this.pnlFuncionarios.Controls.Add(this.txtNumero);
-            this.pnlFuncionarios.Controls.Add(this.lblNumero);
-            this.pnlFuncionarios.Controls.Add(this.txtEndereco);
-            this.pnlFuncionarios.Controls.Add(this.lblEndereco);
-            this.pnlFuncionarios.Controls.Add(this.mskTelefone);
-            this.pnlFuncionarios.Controls.Add(this.lblTelefone);
-            this.pnlFuncionarios.Controls.Add(this.txtEmail);
-            this.pnlFuncionarios.Controls.Add(this.lblEmail);
-            this.pnlFuncionarios.Controls.Add(this.mskCPF);
-            this.pnlFuncionarios.Controls.Add(this.lblCPF);
+            this.pnlFuncionarios.Controls.Add(this.lblFuncNCad);
+            this.pnlFuncionarios.Controls.Add(this.lstFuncNCad);
+            this.pnlFuncionarios.Controls.Add(this.txtContraSenha);
+            this.pnlFuncionarios.Controls.Add(this.lblContraSenha);
+            this.pnlFuncionarios.Controls.Add(this.txtSenha);
+            this.pnlFuncionarios.Controls.Add(this.lblSenha);
             this.pnlFuncionarios.Controls.Add(this.txtNome);
             this.pnlFuncionarios.Controls.Add(this.lblNome);
             this.pnlFuncionarios.Controls.Add(this.txtCodigo);
@@ -388,7 +233,44 @@ namespace PadariaCarmel
             this.pnlFuncionarios.Location = new System.Drawing.Point(2, 3);
             this.pnlFuncionarios.Name = "pnlFuncionarios";
             this.pnlFuncionarios.Size = new System.Drawing.Size(780, 478);
-            this.pnlFuncionarios.TabIndex = 13;
+            this.pnlFuncionarios.TabIndex = 0;
+            // 
+            // txtContraSenha
+            // 
+            this.txtContraSenha.Font = new System.Drawing.Font("Wingdings", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.txtContraSenha.Location = new System.Drawing.Point(31, 252);
+            this.txtContraSenha.MaxLength = 100;
+            this.txtContraSenha.Name = "txtContraSenha";
+            this.txtContraSenha.PasswordChar = 'l';
+            this.txtContraSenha.Size = new System.Drawing.Size(327, 25);
+            this.txtContraSenha.TabIndex = 4;
+            // 
+            // lblContraSenha
+            // 
+            this.lblContraSenha.AutoSize = true;
+            this.lblContraSenha.Location = new System.Drawing.Point(27, 230);
+            this.lblContraSenha.Name = "lblContraSenha";
+            this.lblContraSenha.Size = new System.Drawing.Size(109, 20);
+            this.lblContraSenha.TabIndex = 8;
+            this.lblContraSenha.Text = "Contra-Senha";
+            // 
+            // lstFuncNCad
+            // 
+            this.lstFuncNCad.FormattingEnabled = true;
+            this.lstFuncNCad.ItemHeight = 20;
+            this.lstFuncNCad.Location = new System.Drawing.Point(450, 110);
+            this.lstFuncNCad.Name = "lstFuncNCad";
+            this.lstFuncNCad.Size = new System.Drawing.Size(299, 284);
+            this.lstFuncNCad.TabIndex = 9;
+            // 
+            // lblFuncNCad
+            // 
+            this.lblFuncNCad.AutoSize = true;
+            this.lblFuncNCad.Location = new System.Drawing.Point(446, 86);
+            this.lblFuncNCad.Name = "lblFuncNCad";
+            this.lblFuncNCad.Size = new System.Drawing.Size(223, 20);
+            this.lblFuncNCad.TabIndex = 10;
+            this.lblFuncNCad.Text = "Funcionários não cadastrados";
             // 
             // frmCadastrarUsuario
             // 
@@ -397,8 +279,13 @@ namespace PadariaCarmel
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.pnlCrud);
             this.Controls.Add(this.pnlFuncionarios);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmCadastrarUsuario";
-            this.Text = "frmCadastrarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Padaria - Cadastrar Usuários";
+            this.Load += new System.EventHandler(this.frmCadastrarUsuario_Load);
             this.pnlCrud.ResumeLayout(false);
             this.pnlFuncionarios.ResumeLayout(false);
             this.pnlFuncionarios.PerformLayout();
@@ -407,25 +294,8 @@ namespace PadariaCarmel
         }
 
         #endregion
-
-        private System.Windows.Forms.MaskedTextBox mskCEP;
-        private System.Windows.Forms.Label lblCEP;
-        private System.Windows.Forms.ComboBox cbbEstado;
-        private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.Label lblCidade;
-        private System.Windows.Forms.TextBox txtBairro;
-        private System.Windows.Forms.Label lblBairro;
-        private System.Windows.Forms.TextBox txtNumero;
-        private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.Label lblEndereco;
-        private System.Windows.Forms.MaskedTextBox mskTelefone;
-        private System.Windows.Forms.Label lblTelefone;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.MaskedTextBox mskCPF;
-        private System.Windows.Forms.Label lblCPF;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtCodigo;
@@ -439,5 +309,9 @@ namespace PadariaCarmel
         private System.Windows.Forms.Panel pnlCrud;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Panel pnlFuncionarios;
+        private System.Windows.Forms.TextBox txtContraSenha;
+        private System.Windows.Forms.Label lblContraSenha;
+        private System.Windows.Forms.Label lblFuncNCad;
+        private System.Windows.Forms.ListBox lstFuncNCad;
     }
 }
